@@ -26,14 +26,23 @@ int main(){
     case 'c': case 'C':
         biayaKursus = 750000, lamaKursus = "2 Bulan";
         break;
-    default:
+    case 'd': case 'D':
         biayaKursus = 500000, lamaKursus = "1 Bulan";
         break;
+    default:
+        biayaKursus = 0;
+        break;
     }
-    totalBiaya = biayaKursus + biayaPendaftaran;
+    if(biayaKursus == 0 ){
+        cout << "Paket tidak tersedia" << endl;
 
-    cout << "Biaya Pendaftaran sebesar = Rp" << biayaPendaftaran<< endl;
-    cout << "Biaya Kursus sebesar = Rp" << biayaKursus<< " selama "<< lamaKursus << endl;
-    cout << "Total Biaya sebesar = Rp" << totalBiaya << endl;
+    }else {
+        totalBiaya = biayaKursus + biayaPendaftaran;
+
+        cout << "Biaya Pendaftaran sebesar = Rp" << biayaPendaftaran<< endl;
+        cout << "Biaya Kursus sebesar = Rp" << biayaKursus<< " selama "<< lamaKursus << endl;
+        cout << "Total Biaya sebesar = Rp" << totalBiaya << endl;
+
+    }
 
 }
