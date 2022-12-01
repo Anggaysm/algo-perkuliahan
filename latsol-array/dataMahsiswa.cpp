@@ -5,6 +5,7 @@ using namespace std;
 int main (){
     float nilai[5], min, max, total;
     long nim[5];
+    int no = 1;
     string nama[5];
 
     cout<< "Masukan Data Mahasiswa"<<endl;
@@ -27,7 +28,7 @@ int main (){
     cout<<left<<setw(5)<<"No"<<left<<setw(10)<<"Nim"<<left<<setw(10)<<"Nama"<<left<<setw(8)<<"Nilai"<<endl;
     cout<<"----------------------------------------"<< endl;
     for(int output = 0; output<5; output++){
-        cout<<left<<setw(5)<<output<<
+        cout<<left<<setw(5)<<no<<no++<<
             left<<setw(10)<<nim[output]
             <<left<<setw(10)<<nama[output]
             <<left<<setw(8)<<nilai[output]<<endl;

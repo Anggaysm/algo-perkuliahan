@@ -2,10 +2,11 @@
 using namespace std;
 
 int main (){
-    int hasil, dalem, luar, total;
+    int hasil, dalem, luar, total, inputan;
+    cout << "Masukan angka untuk dihitung deret : ";
+    cin >> inputan;
     total = 0;
-    for (luar = 3; luar >= 1; luar--){
-        
+    for (luar = inputan; luar >= 1; luar--){
         hasil = 0;
         for(dalem = 1; dalem <= luar; dalem++){     
             hasil = hasil + dalem;
@@ -22,6 +23,4 @@ int main (){
         cout << "\n";
     }
         cout << "total adalah : " << total;
-
-    
 }
