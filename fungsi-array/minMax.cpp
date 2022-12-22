@@ -1,12 +1,15 @@
 #include <iostream>
 using namespace std;
 
+//ini buat inputan user
 void inputan(int inputA[], int N){
     for (int i=0; i<N; i++){
         cout << "Masukan angka ke-"<<i+1<<":";
         cin>>inputA[i];
     }
 }
+
+//ini buat mencari nilai terbesar dari array
 int findMax(int inputA[], int N){
     int max = 0;
     for (int i = 0; i < N; i++){
@@ -18,6 +21,7 @@ int findMax(int inputA[], int N){
     }
     return max;
 }
+//ini buat mencari nilai terkercil dari array
 int findMin(int inputA[], int N){
     int min = inputA[0];
     for (int i = 0; i < N; i++){
