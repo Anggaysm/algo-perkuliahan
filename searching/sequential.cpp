@@ -27,7 +27,7 @@ void integer(){
     }
 
     if(ketemu != 0){
-        cout << "Posisi angka yang ada masukan ada di index"<<ketemu<<" dalam array";
+        cout << "Posisi angka yang ada masukan ada di index ke-"<<ketemu<<" dalam array";
     }else{
         cout <<"ngga ada di array, makasih";
     }
