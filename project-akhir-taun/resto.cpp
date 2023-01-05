@@ -41,15 +41,12 @@ int banyak(){
     return porsi;
 }
 
-// menghitung harga makanan dalam porsi
-int perhitunganMakan(int jmlhPorsi, int hargaMakanan){
+// menghitung harga dalam porsi
+int perhitunganHarga(int jmlhPorsi, int hargaMakanan){
     return (jmlhPorsi * hargaMakanan);
 }
 
-// menghitung harga minuman dalam porsi
-int perhitunganMinum(int jmlhPorsi, int hargaMinuman){
-    return (jmlhPorsi * hargaMinuman);
-}
+
 
 // inputan nambah porsi
 char tambahLagi(){
@@ -94,7 +91,7 @@ int main(){
         hargaMakan = hargaMakanan(kodeMakanan);
     }
     int porsiMakan = banyak();
-    int hargaMakanan = perhitunganMakan(porsiMakan, hargaMakan);
+    int hargaMakanan = perhitunganHarga(porsiMakan, hargaMakan);
     hargaSemua += hargaMakanan;
     cout << "Total Harga Makanan Anda : Rp" << hargaSemua << endl;
     char tambahMakan = tambahLagi();
@@ -104,7 +101,7 @@ int main(){
         int kodeMinuman;
         menuMinuman();
         cin >> kodeMinuman;
-        
+
         int hargaMinum;
         if(kodeMinuman > 5){
             cout << "Makanan tidak tersedia. Silahkan Pilih ulang"<< endl;
@@ -113,7 +110,7 @@ int main(){
             hargaMinum = hargaMinuman(kodeMinuman);
         }
         int porsiMinun = banyak();
-        int hargaMinuman = perhitunganMinum(porsiMinun, hargaMinum);
+        int hargaMinuman = perhitunganHarga(porsiMinun, hargaMinum);
         hargaMinumSementara += hargaMinuman;
         cout << "Harga Minuman Anda : Rp" << hargaMinumSementara << endl;
         hargaSemua += hargaMinumSementara;
