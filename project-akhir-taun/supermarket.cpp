@@ -37,6 +37,7 @@ int main(){
         cout << i+1 << ". "<< barang[i]<<endl;
     }
     cout << "Pilih barang yang ingin anda beli (1-5) :";
+    
     int hargaBrg = harga();
 
 
@@ -45,7 +46,7 @@ int main(){
     cin >> jumlah;
     int hitung;
     hitung = perhitungan(jumlah, hargaBrg);
-    cout << hitung<< endl;
+    cout << "Total Sementara "<< hitung<< endl;
     
     total += hitung;
     char lagi;
@@ -58,7 +59,7 @@ int main(){
         cin >> uang;
         int kembali = kembalian(uang, total);
         cout << "Kembalian anda adalah : Rp"<< kembali<< endl;
-        cout << "Terimakasi Telah Belanja di Sini :)";
+        cout << "Terimasih telah Belanja Di sini ";
     }else{
         goto jump;
     }
